@@ -1,0 +1,61 @@
+/********************************
+Bootstrap Variables Override
+**********************************/
+:root {
+    /* Replace your primary color from your UI Kit */
+    --bs-primary: #390E9C;
+
+    /* Replace your secondary color from your UI Kit  */
+    --secondary-color: #0ABAD8;
+
+
+    /* Note: @Macien You can set your font family once here—it references the Google links in the HTML <head>. bs-font-sans-serif = heading; bs-body-font-family = body*/
+
+    /* Replace the main body font from your UI Kit */
+    --bs-font-sans-serif: 'Sansita', verdana, sans-serif;
+    --bs-body-font-family: 'Inter', serif;
+
+    /* Optional: Replace gradient from your UI Kit */
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+
+/********************************
+Global Styles and UI Components
+**********************************/
+
+/* Note: @Macien If an element has 2 class names, then in CSS, the selector is formatted with no space in between them */
+.btn.btn-primary {
+    background-color: #A3CFBB;
+    border: 2px solid #fff
+}
+
+
+/********************************
+Typography
+**********************************/
+
+/* Note: @Macien Don't need this if we're calling in fonts in Bootstrap override section */
+/* @font-face{
+    font-family: myFont;
+    src:url(inter.ttf)
+} */
+
+/* Note: @Macien We can declare Sansita font for headings with either 'var(--bs-font-sans-serif)' or "'Sansita', verdana, sans-serif"; 
+(Note: Using 'var(--bs-font-sans-serif)' is more advance is and will only require you to change it once in the Root section at the top, but other way is fine too!) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Sansita', verdana, sans-serif;
+}
+
+
+
+/********************************
+Page-Specific
+**********************************/
+
+/* Note: @Macien This is where you'd add your inline CSS for the hero section in your HTML file to keep things more maintanable in the long run */
